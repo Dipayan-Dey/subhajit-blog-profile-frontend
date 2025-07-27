@@ -7,10 +7,10 @@ function Header() {
   const [scrollY, setScrollY] = useState(0);
   
   const navLinks = [
-    { label: "Home", href: "/portfolio" },
+    { label: "Home", href: "/" },
     { label: "Adventures", href: "#" },
     { label: "Reviews", href: "#" },
-    { label: "Contact Me", href: "/portfolio/contact" },
+    { label: "Contact Me", href: "/contact" },
     { label: "Community", href: "#" },
   ];
 
