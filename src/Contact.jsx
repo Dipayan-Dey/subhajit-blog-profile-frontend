@@ -78,7 +78,7 @@ const AnimatedContactForm = () => {
 
     
     
-    if (!validateForm()) return
+    if (!validateForm()) {return}
 
   //   const obj = {
   //   fullName: formData.fullName,
@@ -91,7 +91,7 @@ const AnimatedContactForm = () => {
   //   // attachment: formData.attachment
   // };
     axios
-        .post("http://localhost:8000/subhajit/profile/insert", formData)
+        .post("https://subhajit-blog-profile-backend.onrender.com/subhajit/profile/insert", formData)
         .then((res) => {
           console.log(res.data);
           // alert("Form Saved");
