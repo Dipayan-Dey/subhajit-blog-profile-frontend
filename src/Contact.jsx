@@ -95,7 +95,7 @@ const AnimatedContactForm = () => {
         .then((res) => {
           console.log(res.data);
           // alert("Form Saved");
-       toast.success("Data Saved Successfully..");
+       toast.success("Data Send Successfully..");
        getData()
           // setFormData({
           //   username: "",
@@ -107,7 +107,7 @@ const AnimatedContactForm = () => {
         })
         .catch((err) => {
           console.error(err);
-          alert("Error while saving form!");
+          toast.error("Error while saving form!");
           // alert("Error while saving form");
         });
 
