@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import photo1 from "./assets/photo1.jpeg"
 import photo2 from "./assets/id2photo.jpeg"
 import photo3 from "./assets/photo3.jpeg"
+import bgvideo from "./assets/bg-portfolio.mp4"
 import {
   Menu,
   X,
@@ -377,7 +378,7 @@ export default function Blog() {
             className="w-full h-full object-cover"
             style={{ transform: `scale(${1 + scrollY * 0.0002})` }}
           >
-            <source src="https://media.istockphoto.com/id/2180950166/video/aru-valley-pahalgam.mp4?s=mp4-640x640-is&k=20&c=eAgsLpunl2sl9nvKygUVBvEkg9L3W3iXHZtb45R0wys=" />
+            <source src={bgvideo}/>
             {/* Fallback background image */}
             <div
               className="w-full h-full bg-cover bg-center"
